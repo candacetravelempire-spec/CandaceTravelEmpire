@@ -26,7 +26,7 @@ export default function Hero() {
           fill
           priority
           className="object-cover grayscale contrast-[2] brightness-55"
-          quality={100}
+          quality={75}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/20 to-white" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-transparent to-white/40" />

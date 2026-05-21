@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Candace Travel Empire | Premium Taxi & Airport Transfer Kerala",
     description: "Experience luxury travel in Kerala with Candace Travel Empire.",
-    url: "https://candacetravelempire.com",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     siteName: "Candace Travel Empire",
     images: [
       {
