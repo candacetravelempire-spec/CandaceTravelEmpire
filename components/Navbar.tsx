@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Camera } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -39,18 +40,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center font-bold text-white transition-transform group-hover:scale-110">
-            C
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-xl font-bold tracking-tighter text-black">
-              Candace Travel
-            </span>
-            <span className="text-[9px] uppercase tracking-[0.4em] text-black/30 -mt-1 font-medium">
-              Empire
-            </span>
-          </div>
+        <Link href="/" className="flex items-center group">
+                <Image
+                  src="/main_logo.png"
+                  alt="Candace Travel logo"
+                  width={122}
+                  height={32}
+                  priority
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                />
         </Link>
 
         {/* Desktop Links */}
@@ -65,24 +63,6 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-
-        {/* Action Buttons */}
-        {/* <div className="hidden md:flex items-center gap-6">
-          <Link
-            href="https://www.instagram.com/candace_travel_empire"
-            target="_blank"
-            className="text-black/30 hover:text-black transition-colors"
-          >
-            <FaInstagram size={18} />
-          </Link>
-          <Link
-            href="#booking"
-            className="bg-black text-white px-7 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-xl shadow-black/5"
-          >
-            Book Now
-          </Link>
-        </div> */}
-
         {/* Mobile Toggle */}
         <button
           className="lg:hidden p-2 text-black"
@@ -113,13 +93,6 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col gap-4 pt-4 border-t border-black/5">
-                {/* <Link
-                  href="#booking"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="bg-black text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-xs"
-                >
-                  Book Now
-                </Link> */}
                 <Link
                   href="tel:+919048855179"
                   className="flex items-center justify-center gap-2 text-black border border-black/10 py-4 rounded-xl font-bold uppercase tracking-widest text-xs"
