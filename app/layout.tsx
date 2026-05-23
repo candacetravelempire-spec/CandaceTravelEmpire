@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Candace Travel Empire | Premium Taxi & Airport Transfer Kerala",
   description: "Premium and affordable taxi rental, airport transfer and travel services in Kerala. Reliable cab booking, tourist trips, airport pickup and drop services from Mundakayam, Idukki and Kottayam.",
   keywords: [
+    "best taxi service in mundakayam",
+    "best groom car hire mundakayam",
+    "best bride car hire mundakayam",
+    "BMW rental mundakayam",
+    "Audi rental mundakayam",
     "cheap taxi Mundakayam",
     "affordable taxi Kerala",
     "best taxi Mundakayam",

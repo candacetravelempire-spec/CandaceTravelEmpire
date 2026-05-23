@@ -43,17 +43,6 @@ export default function Home() {
       </div>
       <Footer />
 
-      {/* Floating WhatsApp Button
-      <a
-        href="https://wa.me/919048855179"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all animate-bounce hover:animate-none"
-        aria-label="Contact on WhatsApp"
-      >
-        <MessageSquare size={32} fill="white" />
-        <div className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full border-2 border-white animate-pulse" />
-      </a> */}
     </motion.main>
   );
 }
