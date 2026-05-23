@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 import { MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 
+
 export default function Home() {
   return (
     <motion.main 
