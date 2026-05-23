@@ -16,35 +16,35 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {/* Brand Column */}
           <div className="space-y-8">
-            <Link href="/" className="flex items-center group">
+            <Link href="https://instagram.com/candace_travel_empire" target="_blank" className="flex items-center group">
               <Image
                 src="/main_logo.png"
                 alt="Candace Travel Empire"
                 width={152}
                 height={40}
-                className="object-contain transition-transform duration-300 group-hover:scale-105"
+                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
             <p className="text-black/40 text-sm leading-relaxed font-light">
-              Premium taxi rental and airport transfer service in Kerala. 
+              Premium taxi rental and airport transfer service in Kerala.
               Providing reliable and luxury travel experiences from Mundakayam.
             </p>
             <div className="flex items-center gap-5">
-              <Link 
-                href="https://www.instagram.com/candace_travel_empire" 
+              <Link
+                href="https://www.instagram.com/candace_travel_empire"
                 target="_blank"
                 className="w-11 h-11 rounded-full bg-black/5 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
               >
-                <FaInstagram   size={18} />
+                <FaInstagram size={18} />
               </Link>
-              <Link 
-                href="tel:+919048855179" 
+              <Link
+                href="tel:+919048855179"
                 className="w-11 h-11 rounded-full bg-black/5 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
               >
                 <FiPhone size={18} />
               </Link>
-              <Link 
-                href="mailto:candacetravelempire@gmail.com" 
+              <Link
+                href="mailto:candacetravelempire@gmail.com"
                 className="w-11 h-11 rounded-full bg-black/5 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
               >
                 <FiMail size={18} />
@@ -56,10 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="text-black font-bold mb-8 uppercase tracking-[0.2em] text-[10px]">Quick Links</h4>
             <ul className="space-y-4">
-              {["Home", "Services", "Pricing", "About", "Contact"].map((item) => (
+              {["Home", "Services", "Fleet", "Pricing", "About", "Contact"].map((item) => (
                 <li key={item}>
-                  <Link 
-                    href={`#${item.toLowerCase()}`} 
+                  <Link
+                    href={`#${item.toLowerCase()}`}
                     className="text-black/40 hover:text-black transition-colors text-sm font-light"
                   >
                     {item}
@@ -81,8 +81,8 @@ export default function Footer() {
                 "24/7 Cab Service"
               ].map((item) => (
                 <li key={item}>
-                  <Link 
-                    href="#services" 
+                  <Link
+                    href="#services"
                     className="text-black/40 hover:text-black transition-colors text-sm font-light"
                   >
                     {item}
@@ -117,7 +117,7 @@ export default function Footer() {
           <p className="text-black/20 text-[10px] uppercase tracking-widest font-bold">
             © {new Date().getFullYear()} Candace Travel Empire. All Rights Reserved.
           </p>
-          <button 
+          <button
             onClick={scrollToTop}
             className="group flex items-center gap-4 text-black/30 hover:text-black transition-colors"
           >
