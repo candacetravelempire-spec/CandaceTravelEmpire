@@ -73,7 +73,7 @@ export default function Hero() {
             className="flex items-center gap-3 px-5 py-2 rounded-full bg-black/5 border border-black/5 backdrop-blur-md mb-10"
           >
             <span className="w-1 h-1 bg-black rounded-full animate-ping" />
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-black/40">Premium Kerala Taxic serives</span>
+            <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-black/40">Premium Kerala Taxi serives</span>
           </motion.div>
 
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold leading-[1] mb-8 tracking-tighter">
