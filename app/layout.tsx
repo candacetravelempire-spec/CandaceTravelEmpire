@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: "Candace Travel Empire",
     images: [
       {
-        url: "/bg.webp",
+        url: "/gallery/thumbnails.jpeg",
         width: 1200,
         height: 630,
         alt: "Candace Travel Empire",
