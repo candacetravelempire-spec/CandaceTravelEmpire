@@ -2,7 +2,6 @@
 
 import {
   Car,
-  CarFront,
   MapPinned,
   MapPin,
   Phone,
@@ -16,43 +15,32 @@ import { FaInstagram } from "react-icons/fa";
 
 const services = [
   {
-    title: "Taxi Services",
+    title: "Airport Pickup & Drop",
     subtitle: "Skip the wait — your ride is ready when you are!",
     description:
-      "Lightning-fast pickups, smooth rides, and drivers who know every shortcut in town!",
-    icon: CarFront,
+      "Reliable airport transfers with smooth pickups, comfortable rides, and on-time service every time.",
+    icon: Plane,
     image:
-      "/gallery/services/image001.jpeg",
+      "/gallery/taxi/airport.jpeg",
   },
   {
-    title: "Rent a Car",
+    title: "Tourist Taxi Packages",
     subtitle: "Your wheels, your way — freedom starts here!",
     description:
-      "From zippy hatchbacks to luxury SUVs - pick your perfect ride and hit the road in style!",
-    icon: Car,
+      "Explore Kerala with flexible taxi packages designed for sightseeing, day trips, and custom itineraries.",
+    list: [
+      "Tourist Bus",
+      "Traveler Package",
+    ],
+    icon: MapPin,
     image:
-      "/gallery/services/image002.jpeg",
+      "/gallery/taxi/traveler.jpeg",
   },
   {
-    title: "Tour Packages",
+    title: "Wedding & Event Travel",
     subtitle: "Pack your bags — the world is waiting!",
     description:
-      "Adventure awaits! Let us craft unforgettable journeys tailored just for you.",
-    list: [
-      "Romantic Honeymoon Escapes",
-      "Epic College & School Adventures",
-      "Fun-Filled Family Getaways",
-      "Sacred Pilgrimage Journeys",
-    ],
-    icon: MapPinned,
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    title: "Luxury Wedding Car Rentals",
-    subtitle: "Make your grand entrance unforgettable!",
-    description:
-      "Arrive like royalty! Stunning luxury cars that make your fairy tale wedding even more magical.",
+      "Elegant travel solutions for weddings, special occasions, and grand events with extra care.",
     list: [
       "For Groom",
       "For Bride",
@@ -61,6 +49,38 @@ const services = [
     icon: Heart,
     image:
       "/gallery/services/1779632687099.jpg",
+  },
+  {
+    title: "Outstation Trips",
+    subtitle: "Make your grand entrance unforgettable!",
+    description:
+      "Safe and comfortable long-distance travel across South India with experienced drivers.",
+    list: [
+      "Flexible round trips",
+      "Family-friendly travel",
+      "Comfortable highway rides",
+    ],
+    icon: Car,
+    image:
+      "/gallery/taxi/Outstation.jpeg",
+  },
+  {
+    title: "Pilgrim visiting",
+    subtitle: "Safe, respectful journeys to holy places.",
+    description:
+      "Comfortable transport for pilgrimages across Kerala with flexible itineraries and experienced drivers.",
+    icon: MapPinned,
+    image:
+      "/gallery/services/image001.jpeg",
+  },
+  {
+    title: "24/7 Cab Service",
+    subtitle: "Always available, anytime you need us.",
+    description:
+      "Round-the-clock cab service for urgent trips, late-night travel, and last-minute plans.",
+    icon: Clock3,
+    image:
+      "/gallery/taxi/WhatsApp Image 2026-05-25 at 10.31.41 AM.jpeg",
   },
 ];
 

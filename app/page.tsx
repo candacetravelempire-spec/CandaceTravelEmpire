@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+// import Services from "@/components/Services";
 import About from "@/components/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
 // import Fleet from "@/components/Fleet";
@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className="relative">
-        <Services />
+        {/* <Services /> */}
         <ServicesSection />
         <About />
         <GallerySlider />
