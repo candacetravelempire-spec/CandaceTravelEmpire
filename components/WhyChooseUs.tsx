@@ -38,7 +38,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-padding bg-white relative">
+    <section id="why-empire" className="section-padding bg-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-black/30 font-bold tracking-[0.4em] uppercase text-[10px]">Why Empire</span>
