@@ -4,11 +4,15 @@ import {
   Car,
   CarFront,
   MapPinned,
+  MapPin,
+  Phone,
+  Mail,
   Heart,
   Sparkles,
   Clock3,
   Plane
 } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 
 const services = [
   {
@@ -60,6 +64,33 @@ const services = [
   },
 ];
 
+const contactItems = [
+  {
+    icon: <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-black" />,
+    title: "Our Location",
+    value: "Mundakayam, Kerala, India",
+    link: "https://maps.google.com/?q=Mundakayam,Kerala"
+  },
+  {
+    icon: <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-black" />,
+    title: "Phone Number",
+    value: "+91 90488 55179",
+    link: "tel:+919048855179"
+  },
+  {
+    icon: <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-black" />,
+    title: "Email Address",
+    value: "candacetravelempire@gmail.com",
+    link: "mailto:candacetravelempire@gmail.com"
+  },
+  {
+    icon: <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5 text-black" />,
+    title: "Instagram",
+    value: "@candace_travel_empire",
+    link: "https://www.instagram.com/candace_travel_empire"
+  }
+];
+
 export default function ServicesSection() {
   return (
     <section id="services" className="bg-white w-full bg-[#f5f5f5] py-20 px-4">
@@ -106,6 +137,30 @@ export default function ServicesSection() {
     </div>
   </div>
 </div>
+
+          {/* Contact icons */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 gap-y-4 mt-6 mb-6 items-center">
+            {contactItems.map((item, i) => (
+              <a
+                key={i}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs sm:text-sm text-slate-700 hover:text-slate-900 justify-center sm:justify-start text-center sm:text-left p-1 sm:p-2"
+              >
+                <span className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white shadow-sm">{item.icon}</span>
+                <div className="leading-tight">
+                  <div className="font-semibold text-slate-900 text-xs sm:text-sm">{item.title}</div>
+                  <div
+                    className="text-[10px] sm:text-xs text-slate-500 max-w-[110px] sm:max-w-[160px] truncate"
+                    title={item.value}
+                  >
+                    {item.value}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
