@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, MessageSquare, ArrowRight, Star } from "lucide-react";
+import { Phone, ArrowRight, Star } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,11 +26,11 @@ export default function Hero() {
           alt="Premium Travel Kerala"
           fill
           priority
-          className="object-cover grayscale contrast-[2] brightness-55"
+          className="object-cover"
           quality={75}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/20 to-white" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-transparent to-white/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent" />
       </motion.div>
 
       {/* Floating Light Effects */}
@@ -70,32 +71,32 @@ export default function Hero() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="flex items-center gap-3 px-5 py-2 rounded-full bg-black/5 border border-black/5 backdrop-blur-md mb-10"
+            className="flex items-center gap-3 px-5 py-2 rounded-full bg-[#f4e6db] border border-[#ecd7c7] backdrop-blur-md mb-10"
           >
-            <span className="w-1 h-1 bg-black rounded-full animate-ping" />
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-black/40">Premium Kerala Taxi serives</span>
+            <span className="w-1 h-1 bg-[#5B3A29] rounded-full animate-ping" />
+            <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-[#5B3A29]">Premium Kerala Taxi services</span>
           </motion.div>
 
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold leading-[1] mb-8 tracking-tighter">
-            <span className="block text-black">Elevating the</span>
-            <span className="block italic text-white">Journey.</span>
+            <span className="block text-black">Candace Travel</span>
+            <span className="block italic text-white/70 ">Empire</span>
           </h1>
 
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-black mb-12 leading-relaxed font-light uppercase tracking-widest">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-white mb-12 leading-relaxed font-light uppercase tracking-widest">
             Airport Transfers • Tourist Trips • Cab Rentals
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
             <Link
               href="https://api.whatsapp.com/send/?phone=919048855179&text=Hello&type=phone_number&app_absent=0" target="_blank"
-              className="btn-premium flex items-center gap-3"
+              className="btn-premium flex items-center gap-3 bg-[#5B3A29] text-white hover:bg-[#4e2f22]"
             >
               Book Now <ArrowRight size={18} />
             </Link>
             
             <Link
               href="tel:+919048855179"
-              className="btn-outline flex items-center gap-3"
+              className="btn-outline flex items-center gap-3 bg-[#5B3A29] border-[#5B3A29] text-white hover:bg-[#5B3A29]/10"
             >
               <Phone size={18} /> Call Now
             </Link>
@@ -103,9 +104,9 @@ export default function Hero() {
             <Link
               href="https://wa.me/919048855179"
               target="_blank"
-              className="px-8 py-4 bg-black/5 hover:bg-black/10 border border-black rounded-full font-bold text-black transition-all flex items-center gap-3"
+              className="px-8 py-4 bg-[#f4e6db] hover:bg-[#ecd7c7] border border-[#ecd7c7] rounded-full font-bold text-[#5B3A29] transition-all flex items-center gap-3"
             >
-              <MessageSquare size={18} /> WhatsApp
+              <FaWhatsapp size={18} /> WhatsApp
             </Link>
           </div>
         </motion.div>
@@ -125,7 +126,7 @@ export default function Hero() {
           ].map((stat, i) => (
             <div key={i} className="p-8 border-l border-black/5 first:border-l-0">
               <Counter value={stat.target} suffix={stat.value.includes('+') ? '+' : stat.value.includes('/') ? '/7' : ''} />
-              <div className="text-[9px] uppercase tracking-[0.3em] text-black/20 font-bold">{stat.label}</div>
+              <div className="text-[9px] uppercase tracking-[0.3em] text-white font-bold">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -163,7 +164,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
   }, [value]);
 
   return (
-    <div className="text-4xl font-serif font-bold text-black mb-2 tracking-tighter">
+    <div className="text-4xl font-serif font-bold text-white mb-2 tracking-tighter">
       {suffix === '5k+' ? (count / 1000).toFixed(0) + 'k+' : count + suffix}
     </div>
   );

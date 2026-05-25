@@ -15,7 +15,7 @@ const testimonials = [
     name: "Sarah Jenkins",
     location: "United Kingdom",
     text: "We booked a 5-day tour of Kerala. Our driver was more like a guide, showing us hidden gems we would have never found.",
-    rating: 5,
+    rating: 4,
     // avatar: "https://i.pravatar.cc/150?u=sarah"
   },
   {
