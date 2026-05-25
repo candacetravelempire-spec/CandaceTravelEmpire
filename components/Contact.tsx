@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: <Mail className="text-black" />,
     title: "Email Address",
-    value: "candacetravel.....",
+    value: "candacetravelempire@gmail.com",
     link: "mailto:candacetravelempire@gmail.com"
   },
   {
@@ -55,16 +55,16 @@ export default function Contact() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-8 p-8 bg-black/5 rounded-3xl border border-black/5 group hover:bg-black/10 transition-all shadow-sm"
+                className="flex items-start gap-8 p-8 bg-black/5 rounded-3xl border border-black/5 group hover:bg-black/10 transition-all shadow-sm"
               >
-                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform text-black">
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform text-black shrink-0">
                   {item.icon}
                 </div>
-                <div>
+                <div className="min-w-0 flex-1 overflow-hidden">
                   <div className="text-[10px] uppercase tracking-widest text-black/30 mb-2 font-bold">{item.title}</div>
-                  <div className="text-lg font-bold flex items-center gap-2 text-black tracking-tight">
-                    {item.value}
-                    <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="text-sm font-bold flex items-center gap-2 text-black tracking-tight break-words whitespace-normal">
+                    <span className="truncate block" title={item.value}>{item.value}</span>
+                    <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
                   </div>
                 </div>
               </motion.a>

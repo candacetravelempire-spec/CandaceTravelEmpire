@@ -1,6 +1,6 @@
 "use client";
 import { FiPhone, FiMail, FiMapPin, FiArrowUp } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -37,6 +37,14 @@ export default function Footer() {
               >
                 <FaInstagram size={18} />
               </Link>
+              
+                <Link
+                  href="https://wa.me/919048855179"
+                  target="_blank"
+                  className="w-11 h-11 rounded-full bg-black/5 flex items-center justify-center text-black hover:bg-green-600 hover:text-white transition-all shadow-sm"
+                >
+                  <FaWhatsapp size={18} />
+                </Link>
               <Link
                 href="tel:+919048855179"
                 className="w-11 h-11 rounded-full bg-black/5 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all shadow-sm"
