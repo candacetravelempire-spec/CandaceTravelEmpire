@@ -5,16 +5,15 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Fleet from "@/components/Fleet";
+// import Fleet from "@/components/Fleet";
 import GallerySlider from "@/components/GallerySlider";
-import Pricing from "@/components/Pricing";
+// import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import InstagramGallery from "@/components/InstagramGallery";
 import FAQ from "@/components/FAQ";
-// import BookingForm from "@/components/BookingForm";
+import ServicesSection from "@/components/ServicesSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 
 
@@ -30,11 +29,12 @@ export default function Home() {
       <Hero />
       <div className="relative">
         <Services />
+        <ServicesSection />
         <About />
+        <GallerySlider />
         <WhyChooseUs />
         {/* <Fleet /> */}
-        <Pricing />
-        <GallerySlider />
+        {/* <Pricing /> */}
         <Testimonials />
         <InstagramGallery />
         <FAQ />

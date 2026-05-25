@@ -3,16 +3,15 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Camera } from "lucide-react";
-import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "#home" },
+  { name: "We Offer", href: "#we-offer" },
   { name: "Services", href: "#services" },
   { name: "Gallery", href: "#gallery" },
-  { name: "Pricing", href: "#pricing" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
 ];

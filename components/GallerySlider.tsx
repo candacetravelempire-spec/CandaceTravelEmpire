@@ -2,15 +2,15 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  ChevronLeft, 
-  ChevronRight, 
-  Maximize2, 
-  X, 
-  Play, 
-  Pause, 
-  Heart, 
-  Car 
+import {
+  ChevronLeft,
+  ChevronRight,
+  Maximize2,
+  X,
+  Play,
+  Pause,
+  Heart,
+  Car
 } from "lucide-react";
 
 interface GalleryImage {
@@ -21,11 +21,6 @@ interface GalleryImage {
 
 const luxImages: GalleryImage[] = [
   {
-    src: "/gallery/lux/WhatsApp Image 2026-05-19 at 1.43.56 PM.jpeg",
-    title: "Bridal Elegance",
-    description: "Premium wedding transport decorated with exquisite floral arrangements."
-  },
-  {
     src: "/gallery/lux/WhatsApp Image 2026-05-19 at 1.43.57 PM.jpeg",
     title: "Groom's Arrival",
     description: "Luxury sedans ready for the grand arrival of the groom and entourage."
@@ -34,34 +29,54 @@ const luxImages: GalleryImage[] = [
     src: "/gallery/lux/WhatsApp Image 2026-05-19 at 1.44.02 PM.jpeg",
     title: "The Perfect Departure",
     description: "Elegant getaway cars for the newlywed couple's first journey together."
-  }
+  },
+  {
+    src: "/gallery/lux/08_49_44 AM.png",
+    title: "Floral Elegance",
+    description: "Exquisite wedding cars adorned with stunning floral arrangements."
+  },
+  {
+    src: "/gallery/lux/WhatsApp Image 2026-05-19 at 1.43.56 PM.jpeg",
+    title: "Bridal Elegance",
+    description: "Premium wedding transport decorated with exquisite floral arrangements."
+  },
 ];
 
 const taxiImages: GalleryImage[] = [
   {
-    src: "/gallery/taxic/WhatsApp Image 2026-05-19 at 1.43.54 PM.jpeg",
+    src: "/gallery/taxi/WhatsApp Image 2026-05-19 at 1.43.54 PM.jpeg",
     title: "Premium Sedans",
     description: "Executive travel solutions for local and outstation trips."
   },
   {
-    src: "/gallery/taxic/WhatsApp Image 2026-05-19 at 1.43.59 PM.jpeg",
+    src: "/gallery/taxi/WhatsApp Image 2026-05-19 at 1.43.59 PM.jpeg",
     title: "Pristine Interiors",
     description: "Comfortable and immaculate cabin space for a relaxing ride."
   },
   {
-    src: "/gallery/taxic/WhatsApp Image 2025-19 at 1.44.03 PM.jpeg",
+    src: "/gallery/taxi/WhatsApp Image 2025-19 at 1.44.03 PM.jpeg",
     title: "Reliable Chauffeurs",
     description: "Professional, well-dressed drivers committed to your safety."
   },
   {
-    src: "/gallery/taxic/WhatsApp Image 2026-05-19 at 1.44.04 PM.jpeg",
+    src: "/gallery/taxi/WhatsApp Image 2026-05-19 at 1.44.04 PM.jpeg",
     title: "Fleet Lineup",
     description: "A wide collection of modern sedans and SUVs at your service."
   },
   {
-    src: "/gallery/taxic/WhatsApp Image 2026-05-19 at PM.jpeg",
+    src: "/gallery/taxi/WhatsApp Image 2026-05-19 at PM.jpeg",
     title: "Luxury Travel Experience",
     description: "First-class taxi experience for corporate and leisure clients."
+  },
+  {
+    src: "/gallery/taxi/WhatsApp Image 2026-05-25 at 8.21.47 AM.jpeg",
+    title: "Airport Transfers",
+    description: "Punctual and comfortable rides to and from major airports."
+  },
+  {
+    src: "/gallery/taxi/WhatsApp Image 2026-05-25 at 8.21.48 AM.jpeg",
+    title: "Corporate Transportation",
+    description: "Reliable and professional taxi services for business travelers."
   }
 ];
 
@@ -166,22 +181,20 @@ export default function GallerySlider() {
           <div className="bg-black/5 p-1.5 rounded-full border border-black/5 flex gap-2">
             <button
               onClick={() => handleTabChange("wedding")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === "wedding"
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${activeTab === "wedding"
                   ? "bg-black text-white shadow-lg shadow-black/10"
                   : "text-black/55 hover:text-black"
-              }`}
+                }`}
             >
               <Heart size={14} className={activeTab === "wedding" ? "fill-white" : ""} />
               Wedding & Events
             </button>
             <button
               onClick={() => handleTabChange("taxi")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === "taxi"
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${activeTab === "taxi"
                   ? "bg-black text-white shadow-lg shadow-black/10"
                   : "text-black/55 hover:text-black"
-              }`}
+                }`}
             >
               <Car size={14} />
               Premium Cabs
@@ -272,9 +285,8 @@ export default function GallerySlider() {
                 <button
                   key={index}
                   onClick={() => handleDotClick(index)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    currentIndex === index ? "w-8 bg-black" : "w-2.5 bg-black/15 hover:bg-black/35"
-                  }`}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${currentIndex === index ? "w-8 bg-black" : "w-2.5 bg-black/15 hover:bg-black/35"
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -289,9 +301,8 @@ export default function GallerySlider() {
                     setDirection(index > currentIndex ? 1 : -1);
                     setCurrentIndex(index);
                   }}
-                  className={`relative w-16 h-10 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${
-                    currentIndex === index ? "border-black scale-95" : "border-transparent opacity-60 hover:opacity-100"
-                  }`}
+                  className={`relative w-16 h-10 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${currentIndex === index ? "border-black scale-95" : "border-transparent opacity-60 hover:opacity-100"
+                    }`}
                 >
                   <img src={img.src} alt="" className="w-full h-full object-cover" />
                 </button>
@@ -321,7 +332,7 @@ export default function GallerySlider() {
             </button>
 
             {/* Main Modal Image Area */}
-            <div 
+            <div
               className="relative w-full max-w-6xl aspect-[16/10] md:aspect-[16/9] max-h-[80vh] rounded-2xl overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
@@ -355,7 +366,7 @@ export default function GallerySlider() {
             </div>
 
             {/* Info footer in Lightbox */}
-            <div 
+            <div
               className="mt-6 text-center max-w-xl"
               onClick={(e) => e.stopPropagation()}
             >

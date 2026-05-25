@@ -45,7 +45,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-white relative">
+    <section id="we-offer" className="section-padding bg-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.span 
@@ -53,7 +53,7 @@ export default function Services() {
             whileInView={{ opacity: 1 }}
             className="text-black font-bold tracking-[0.3em] uppercase text-xs"
           >
-            Our Services
+            What We Offer
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
