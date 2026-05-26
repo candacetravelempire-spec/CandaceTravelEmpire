@@ -48,7 +48,7 @@ const services = [
     ],
     icon: Heart,
     image:
-      "/gallery/services/1779632687099.jpg",
+      "/gallery/lux/WhatsApp Image 2026-05-19 at 1.44.02 PM.jpeg",
   },
   {
     title: "Outstation Trips",

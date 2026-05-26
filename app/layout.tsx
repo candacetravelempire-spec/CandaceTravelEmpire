@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Candace Travel Empire | Premium Taxi & Airport Transfer Kerala",
-  description: "Premium and affordable taxi rental, airport transfer and travel services in Kerala. Reliable cab booking, tourist trips, airport pickup and drop services from Mundakayam, Idukki and Kottayam.",
+  description: "Best Premium and affordable taxi rental, airport transfer and travel services in Kerala. Reliable cab booking, tourist trips, airport pickup and drop services from Mundakayam, Idukki and Kottayam.",
   keywords: [
     "best taxi service in mundakayam",
     "best groom car hire mundakayam",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Candace Travel Empire" }],
   openGraph: {
     title: "Candace Travel Empire | Premium Taxi & Airport Transfer Kerala",
-    description: "Experience luxury travel in Kerala with Candace Travel Empire.",
+    description: "Experience luxury travel in Kerala with Candace Travel Empire, Best taxi service in Mundakayam and whole Kerala ,Book premium cars for airport transfers, tourist trips, and special occasions. Reliable, affordable, and unforgettable journeys await you.",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
     siteName: "Candace Travel Empire",
     images: [

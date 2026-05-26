@@ -77,6 +77,16 @@ const taxiImages: GalleryImage[] = [
     src: "/gallery/taxi/WhatsApp Image 2026-05-25 at 8.21.48 AM.jpeg",
     title: "Corporate Transportation",
     description: "Reliable and professional taxi services for business travelers."
+  },
+  {
+    src: "/gallery/taxi/WhatsApp Image 2026-05-25 at 8.32.04 PM.jpeg",
+    title: "Event Transportation",
+    description: "Seamless travel solutions for weddings, parties, and special occasions."
+  },
+  {
+    src: "/gallery/taxi/WhatsApp Image 2026-05-25PM.jpeg",
+    title: "Outstation Travel",
+    description: "Comfortable and safe long-distance taxi services across South India."
   }
 ];
 

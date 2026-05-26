@@ -104,7 +104,7 @@ export default function Hero() {
             <Link
               href="https://wa.me/919048855179"
               target="_blank"
-              className="px-8 py-4 bg-[#f4e6db] hover:bg-[#ecd7c7] border border-[#ecd7c7] rounded-full font-bold text-[#5B3A29] transition-all flex items-center gap-3"
+              className="px-6 py-3 md:px-8 md:py-4 bg-[#f4e6db] hover:bg-[#ecd7c7] border border-[#ecd7c7] rounded-full font-bold text-[#5B3A29] transition-all flex items-center gap-3"
             >
               <FaWhatsapp size={18} /> WhatsApp
             </Link>
